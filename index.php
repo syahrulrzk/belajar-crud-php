@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Belajar-crud</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <!-- <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
   </head>
   <body>
     <nav class="navbar bg-body-tertiary">
@@ -26,7 +27,8 @@
           CRUD <cite title="Source Title">Create, Read, Update, Delete</cite>
         </figcaption>
       </figure>
-        <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i>Tambah Data</button>
+        <button type="button" class="btn btn-primary">
+          <i class="fa fa-plus"></i> Tambah Data</button>
         <div class="table-responsive">
           <table class="table align-middle table-hover border">
             <thead>
