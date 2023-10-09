@@ -1,5 +1,5 @@
 <?php 
-    include 'koneksi.php';
+    include 'koneksi.php'; // connekt db
 
     $query  = "SELECT * FROM tb_siswa;";
     $sql    = mysqli_query($conn, $query);
@@ -62,10 +62,10 @@
               </tr>
             </thead>
             <tbody>
+            <!-- Ambil data on database -->
+
             <?php 
-
-              while ($result = mysqli_fetch_assoc($sql)) {
-
+                while ($result = mysqli_fetch_assoc($sql)) {
              ?>
               <tr>
                 <td><center>
@@ -83,9 +83,7 @@
               </tr>
 
             <?php 
-
                  }
-
              ?>
 
             </tbody>
