@@ -24,7 +24,7 @@
                 NISN
               </label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="nisn" placeholder="Ex : 112233">
+                <input type="text" name="nisn" class="form-control" id="nisn" placeholder="Ex : 112233">
               </div>
             </div>
 
@@ -33,7 +33,7 @@
                 Nama Siswa
               </label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="nama" placeholder="Jarot">
+                <input type="text" name="nama_siswa" class="form-control" id="nama" placeholder="Jarot">
               </div>
             </div>
 
@@ -42,7 +42,7 @@
                 Jenis Kelamin
               </label>
               <div class="col-sm-10">
-                <select class="form-select">
+                <select id="jkel" name="jenis_kelamin" class="form-select">
                   <option selected>Jenis Kelamin</option>
                   <option value="1">Laki-laki</option>
                   <option value="2">Perempuan</option>
@@ -55,7 +55,7 @@
                 Foto Siswa
               </label>
               <div class="col-sm-10">
-                <input class="form-control" type="file" id="foto">
+                <input class="form-control" type="file" name="foto" id="foto">
               </div>
             </div>
 
@@ -64,7 +64,7 @@
                 Alamat Lengkap
               </label>
               <div class="col-sm-10">
-                <textarea class="form-control" placeholder="Jl...." id="alamat"></textarea>
+                <textarea class="form-control" placeholder="Jl...." name="alamat" id="alamat"></textarea>
               </div>
             </div>
             <?php  ?>
