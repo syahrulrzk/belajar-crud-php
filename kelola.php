@@ -18,71 +18,84 @@
       </nav>
 
       <div class="container">
-        <div class="mb-3 row">
-          <label for="nisn" class="col-sm-2 col-form-label">
-            NISN
-          </label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="nisn" placeholder="Ex : 112233">
-          </div>
-        </div>
+        <form method="POST" action="proses.php">
+            <div class="mb-3 row">
+              <label for="nisn" class="col-sm-2 col-form-label">
+                NISN
+              </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="nisn" placeholder="Ex : 112233">
+              </div>
+            </div>
 
-        <div class="mb-3 row">
-          <label for="nama" class="col-sm-2 col-form-label">
-            Nama Siswa
-          </label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="nama" placeholder="Jarot">
-          </div>
-        </div>
+            <div class="mb-3 row">
+              <label for="nama" class="col-sm-2 col-form-label">
+                Nama Siswa
+              </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="nama" placeholder="Jarot">
+              </div>
+            </div>
 
-        <div class="mb-3 row">
-          <label for="jkel" class="col-sm-2 col-form-label">
-            Jenis Kelamin
-          </label>
-          <div class="col-sm-10">
-            <select class="form-select">
-              <option selected>Jenis Kelamin</option>
-              <option value="1">Laki-laki</option>
-              <option value="2">Perempuan</option>
-            </select>
-          </div>
-        </div>
+            <div class="mb-3 row">
+              <label for="jkel" class="col-sm-2 col-form-label">
+                Jenis Kelamin
+              </label>
+              <div class="col-sm-10">
+                <select class="form-select">
+                  <option selected>Jenis Kelamin</option>
+                  <option value="1">Laki-laki</option>
+                  <option value="2">Perempuan</option>
+                </select>
+              </div>
+            </div>
 
-        <div class="mb-3 row">
-          <label for="foto" class="col-sm-2 col-form-label">
-            Foto Siswa
-          </label>
-          <div class="col-sm-10">
-            <input class="form-control" type="file" id="foto">
-          </div>
-        </div>
+            <div class="mb-3 row">
+              <label for="foto" class="col-sm-2 col-form-label">
+                Foto Siswa
+              </label>
+              <div class="col-sm-10">
+                <input class="form-control" type="file" id="foto">
+              </div>
+            </div>
 
-         <div class="mb-3 row">
-          <label for="alamat" class="col-sm-2 col-form-label">
-            Alamat Lengkap
-          </label>
-          <div class="col-sm-10">
-            <textarea class="form-control" placeholder="Jl...." id="alamat"></textarea>
-          </div>
-        </div>
-        <div class="mb-3 row ">
-          <div class="col d-flex justify-content-end">
-            <a href="index.php" type="button" class="btn btn-danger">
-              <i class="fa fa-reply" aria-hidden="true"></i>
-              Batal
-            </a>
-            <a type="button" class="btn btn-primary ms-2">
-              <i class="fa fa-floppy-o" aria-hidden="true"></i>
-               Tambahkan 
-              </a>
-          </div>
-        </div>
+             <div class="mb-3 row">
+              <label for="alamat" class="col-sm-2 col-form-label">
+                Alamat Lengkap
+              </label>
+              <div class="col-sm-10">
+                <textarea class="form-control" placeholder="Jl...." id="alamat"></textarea>
+              </div>
+            </div>
+            <?php  ?>
+            <div class="mb-3 row ">
+              <div class="col d-flex justify-content-end">
+                 <?php  
+                      if (isset($_GET['ubah'])) {   
+                 ?>
+                      <button type="submit" name="aksi" value="edit" class="btn btn-primary ms-2">
+                        <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                         Simpan Perubahan
+                      </button >
+                <?php 
+                  } else {
+                ?>
+                      <button type="submit" name="aksi" value="add" class="btn btn-primary ms-2">
+                        <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                         Tambahkan
+                      </button>
+
+                <?php   
+                    }
+                 ?>
+                      <button href="index.php" type="button" class="btn btn-danger ms-2">
+                        <i class="fa fa-reply" aria-hidden="true"></i>
+                        Batal
+                     </button> 
+              </div>
+            </div>
+        </form>
       </div>
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

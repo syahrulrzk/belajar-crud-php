@@ -52,7 +52,7 @@
                 <td>Jl.Jongol</td>
                 <td>
                   <a href="kelola.php?ubah=1" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                  <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                  <a href="proses.php?hapus=1" type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
                 </td>
               </tr>
               <tr>
@@ -64,29 +64,12 @@
                 <td>Jl.Sicantik</td>
                 <td>
                   <a href="kelola.php?ubah=2" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                  <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                </td>
-              </tr>
-              <tr>
-                <td>3.</td>
-                <td>002233</td>
-                <td>Ucup</td>
-                <td>Laki-laki</td>
-                <td><img src="img/foto-anime/img2.jpg" style="width:50px; height: 70px;"></td>
-                <td>Jl.Gatau Jalan</td>
-                <td>
-                  <a href="kelola.php?ubah=3" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                  <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                  <a href="proses.php?hapus=2"type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
