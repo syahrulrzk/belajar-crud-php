@@ -3,8 +3,18 @@
 
     $query  = "SELECT * FROM tb_siswa;";
     $sql    = mysqli_query($conn, $query);
+    $no     = 0;
 
-    var_dump($sql);
+    // var_dump($sql); ketahui nilai data
+    // $result = mysqli_fetch_row($sql);
+    // echo $result[2]; 
+
+    // $result = mysqli_fetch_assoc($sql);
+    // echo $result['nama_siswa']
+
+    // while ($result = mysqli_fetch_assoc($sql)) {
+    //   echo $result['nama_siswa']. "<br>";
+    // }
 
  ?>
 
@@ -52,30 +62,32 @@
               </tr>
             </thead>
             <tbody>
+            <?php 
+
+              while ($result = mysqli_fetch_assoc($sql)) {
+
+             ?>
               <tr>
-                <td>1.</td>
-                <td>002231</td>
-                <td>Jamet</td>
-                <td>Laki-laki</td>
-                <td><img src="img/foto-anime/img1.jpg" style="width:50px; height: 70px;"></td>
-                <td>Jl.Jongol</td>
+                <td><center>
+                  <?php echo ++$no; ?>.
+                </center></td>
+                <td><?php echo $result['nisn']; ?></td>
+                <td><?php echo $result['nama_siswa']; ?></td>
+                <td><?php echo $result['jenis_kelamin']; ?></td>
+                <td><img src="img/foto-anime/<?php echo $result['foto_siswa']; ?>" style="width:50px; height: 70px;"></td>
+                <td><?php echo $result['alamat']; ?></td>
                 <td>
                   <a href="kelola.php?ubah=1" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                   <a href="proses.php?hapus=1" type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
                 </td>
               </tr>
-              <tr>
-                <td>2.</td>
-                <td>002232</td>
-                <td>Jenitya</td>
-                <td>Perempuan</td>
-                <td><img src="img/foto-anime/img4.jpg" style="width:50px; height: 70px;"></td>
-                <td>Jl.Sicantik</td>
-                <td>
-                  <a href="kelola.php?ubah=2" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                  <a href="proses.php?hapus=2"type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                </td>
-              </tr>
+
+            <?php 
+
+                 }
+
+             ?>
+
             </tbody>
           </table>
         </div>
