@@ -10,9 +10,9 @@
   </head>
   <body>
     <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="#">
-            CRUD - PHP
+            <i class="fa fa-code" aria-hidden="true"></i> CRUD - PHP
           </a>
         </div>
       </nav>
@@ -27,9 +27,9 @@
           CRUD <cite title="Source Title">Create, Read, Update, Delete</cite>
         </figcaption>
       </figure>
-        <button type="button" class="btn btn-primary">
-          <i class="fa fa-plus"></i> Tambah Data</button>
-        <div class="table-responsive">
+        <a href="kelola.php" type="button" class="btn btn-primary">
+          <i class="fa fa-plus"></i> Tambah Data</a>
+        <div class="table-responsive mt-1">
           <table class="table align-middle table-hover border">
             <thead>
               <tr>
@@ -51,8 +51,8 @@
                 <td><img src="img/img1.jpg" style="width:80px; height: 50px;"></td>
                 <td>Jl.Jongol</td>
                 <td>
-                  <button type="button" class="btn btn-success btn-sm">Ubah</button>
-                  <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                  <a href="kelola.php" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </td>
               </tr>
               <tr>
@@ -63,8 +63,8 @@
                 <td><img src="img/img2.jpg" style="width:80px; height: 50px;"></td>
                 <td>Jl.Sicantik</td>
                 <td>
-                  <button type="button" class="btn btn-success btn-sm">Ubah</button>
-                  <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                  <a href="kelola.php" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </td>
               </tr>
               <tr>
@@ -75,8 +75,8 @@
                 <td><img src="img/img3.jpg" style="width:80px; height: 50px;"></td>
                 <td>Jl.Gatau Jalan</td>
                 <td>
-                  <button type="button" class="btn btn-success btn-sm">Ubah</button>
-                  <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                  <a href="kelola.php" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </td>
               </tr>
             </tbody>
