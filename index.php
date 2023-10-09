@@ -48,10 +48,10 @@
                 <td>002231</td>
                 <td>Jamet</td>
                 <td>Laki-laki</td>
-                <td><img src="img/img1.jpg" style="width:80px; height: 50px;"></td>
+                <td><img src="img/foto-anime/img1.jpg" style="width:50px; height: 70px;"></td>
                 <td>Jl.Jongol</td>
                 <td>
-                  <a href="kelola.php" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  <a href="kelola.php?ubah=1" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                   <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </td>
               </tr>
@@ -60,10 +60,10 @@
                 <td>002232</td>
                 <td>Jenitya</td>
                 <td>Perempuan</td>
-                <td><img src="img/img2.jpg" style="width:80px; height: 50px;"></td>
+                <td><img src="img/foto-anime/img4.jpg" style="width:50px; height: 70px;"></td>
                 <td>Jl.Sicantik</td>
                 <td>
-                  <a href="kelola.php" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  <a href="kelola.php?ubah=2" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                   <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </td>
               </tr>
@@ -72,10 +72,10 @@
                 <td>002233</td>
                 <td>Ucup</td>
                 <td>Laki-laki</td>
-                <td><img src="img/img3.jpg" style="width:80px; height: 50px;"></td>
+                <td><img src="img/foto-anime/img2.jpg" style="width:50px; height: 70px;"></td>
                 <td>Jl.Gatau Jalan</td>
                 <td>
-                  <a href="kelola.php" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  <a href="kelola.php?ubah=3" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                   <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </td>
               </tr>
