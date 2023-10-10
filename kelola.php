@@ -44,8 +44,8 @@
               <div class="col-sm-10">
                 <select id="jkel" name="jenis_kelamin" class="form-select">
                   <option selected>Jenis Kelamin</option>
-                  <option value="string">Laki-laki</option>
-                  <option value="2">Perempuan</option>
+                  <option value="Laki-laki">Laki-laki</option>
+                  <option value="Perempuan">Perempuan</option>
                 </select>
               </div>
             </div>
@@ -55,7 +55,7 @@
                 Foto Siswa
               </label>
               <div class="col-sm-10">
-                <input class="form-control" type="file" name="foto_siswa" id="foto">
+                <input class="form-control" type="file" name="foto" id="foto">
               </div>
             </div>
 
