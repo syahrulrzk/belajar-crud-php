@@ -1,7 +1,7 @@
 <?php 
 	if(isset ($_POST['aksi'])) {
 		if($_POST['aksi'] == "add"){
-			// echo "Tambahakan Data Succsess <a href='index.php'>[ Home ] </a>";
+			echo "Tambahakan Data Succsess <a href='index.php'>[ Home ] </a>";
 
 			$nisn	= $_POST['nisn'];
 			$nama_siswa	= $_POST['nama_siswa'];
