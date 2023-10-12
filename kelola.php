@@ -18,7 +18,7 @@
       </nav>
 
       <div class="container">
-        <form method="POST" action="proses.php">
+        <form method="POST" action="proses.php" enctype="mulipart/form-data">
             <div class="mb-3 row">
               <label for="nisn" class="col-sm-2 col-form-label">
                 NISN

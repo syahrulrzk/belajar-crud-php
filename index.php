@@ -78,7 +78,7 @@
                 <td><?php echo $result['alamat']; ?></td>
                 <td>
                   <a href="kelola.php?ubah=<?php echo $result['id_siswa']; ?>" type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                  <a href="proses.php?hapus=<?php echo $result['id_siswa']; ?>" type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                  <a href="proses.php?hapus=<?php echo $result['id_siswa']; ?>" type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true" onclick="return confirm('Apakah anda yakin ingin menghapus data tersebut???')"></i></a>
                 </td>
               </tr>
 

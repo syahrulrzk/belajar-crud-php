@@ -6,6 +6,9 @@
 		if($_POST['aksi'] == "add"){
 			
 
+			var_dump($_POST);
+			die();
+
 			$nisn	= $_POST['nisn'];
 			$nama_siswa	= $_POST['nama_siswa'];
 			$jenis_kelamin	= $_POST['jenis_kelamin'];
