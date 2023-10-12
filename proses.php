@@ -6,13 +6,15 @@
 		if($_POST['aksi'] == "add"){
 			
 
-			var_dump($_POST);
+			var_dump($_FILES);
+
+			echo $_FILES['foto'] ['type'];
 			die();
 
 			$nisn	= $_POST['nisn'];
 			$nama_siswa	= $_POST['nama_siswa'];
 			$jenis_kelamin	= $_POST['jenis_kelamin'];
-			$foto	= "img1.jpg";
+			$foto	= $_FILES['foto'] ['name'];
 			$alamat = $_POST['alamat'];
 
 			$query	= "INSERT INTO tb_siswa VALUES( null, '$nisn', '$nama_siswa', '$jenis_kelamin', '$foto', '$alamat')";
