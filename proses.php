@@ -8,14 +8,19 @@
 
 			var_dump($_FILES);
 
-			echo $_FILES['foto'] ['type'];
+			echo $_FILES['foto']['name'];
 			die();
 
 			$nisn	= $_POST['nisn'];
 			$nama_siswa	= $_POST['nama_siswa'];
 			$jenis_kelamin	= $_POST['jenis_kelamin'];
-			$foto	= $_FILES['foto'] ['name'];
+			$foto	= "img1.jpg";
 			$alamat = $_POST['alamat'];
+ 
+			// $dir 	= "img/";
+			// $tmpFile = $_FILES['foto']['tmp_name'];
+
+			// move_uploaded_file($tmpFile, $dir.$foto);
 
 			$query	= "INSERT INTO tb_siswa VALUES( null, '$nisn', '$nama_siswa', '$jenis_kelamin', '$foto', '$alamat')";
 			$sql	= mysqli_query($conn, $query);
